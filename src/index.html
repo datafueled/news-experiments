@@ -1,0 +1,60 @@
+{% extends "src/base.html" %}
+
+{% block bodyclass %}class="index"{% endblock %}
+{% block body %}
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 text-center">
+        <p>These are our <b>News Experiments</b>.</p>
+        <p>We're interested in how digital media, especially within
+        the browser, allow news to be presented in new ways to improve
+        the reader's ability to understand events within a context.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="page-header">
+        <h1>Index Pages</h1>
+      </div>
+      <p class="lead">An index page is the news reader's first
+      impression when visiting the site. There are many ways
+      to structure this page to provide different experiences
+      for the news reader.</p>
+      <ul>
+        <li>Highlights</li>
+        <li>Map</li>
+        <li>Pinboard</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <div class="page-header">
+        <h1>Article Pages</h1>
+      </div>
+      <p class="lead">Articles should be able to present contextual
+      information by way of annotations.</p>
+      <ul>
+        <li>No annotations</li>
+        <li>Mouseover annotations</li>
+        <li>Margin note annotations</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="page-header">
+        <h1>Storyline Pages</h1>
+      </div>
+      <p class="lead">Articles about a given story or topic should be
+      published within a storyline to help give them more context, as
+      well as provide a better grouping for the news reader.</p>
+      <ul>
+       <li>...</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
