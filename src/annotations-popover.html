@@ -33,7 +33,7 @@
 
       <p>The United States has begun carrying out air strikes near Iraq's
       <a href="#" tabindex="0" class="aside" data-toggle="popover"
-      data-trigger="focus" title="Haditha Dam"
+      title="Haditha Dam"
       data-content="The Haditha Dam is an earth-fill dam on
       the Euphrates, north of Haditha (Iraq), creating Lake Qadisiyah.
       The dam is just over 9 kilometres (5.6 mi) long and 57 metres
@@ -91,7 +91,7 @@
       ministry spokesman told Al Jazeera.</p>
 
       <p>In a separate development, <a href="#" tabindex="0" class="aside"
-        data-toggle="popover" data-trigger="focus" title="Kurdish"
+        data-toggle="popover" title="Kurdish"
         data-content="<p>The Kurdish people, or Kurds (Kurdish: کورد, Kurd), are an
         ethnic group in Western Asia, mostly inhabiting a region known
         as Kurdistan, which includes adjacent parts of Iran, Iraq, Syria,
@@ -101,7 +101,7 @@
         since 1991. Nationalist movements in the other Kurdish-populated
         countries (Turkey, Syria, Iran) push for Kurdish regional autonomy
         or the creation of a sovereign state.</p>">Kurdish</a> <a href="#" tabindex="0"
-        class="aside" data-toggle="popover" data-trigger="focus" title="Peshmerga"
+        class="aside" data-toggle="popover" title="Peshmerga"
         data-content="Peshmerga (Kurdish: Pêşmerge) is the term used by
         Kurds to refer to armed Kurdish fighters. Literally meaning
         &quot;those who confront death&quot; (Pesh front + marg death) the Peshmerga
@@ -169,7 +169,8 @@
     });
     $('.aside').popover({
       'html': true,
-      'placement': 'auto left'
+      'placement': 'auto left',
+      'trigger': 'focus'
     });
   });
 {% endblock %}
