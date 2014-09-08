@@ -6,3 +6,16 @@ body {
 body.index {
   padding-top: 50px;
 }
+
+img.image-floated-left {
+  margin: 10px 10px 0px;
+}
+
+.aside {
+  text-decoration: none;
+  border-bottom: 2px blue dotted;
+}
+
+.aside:hover {
+  text-decoration: none;
+}

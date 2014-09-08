@@ -1,5 +1,8 @@
 FILES=index.html \
-      margin-notes.html
+      annotations-none.html \
+      annotations-margin-notes.html \
+      annotations-popover.html \
+      annotations-tooltip.html
 
 INPUT_DIR=src
 OUTPUT_DIR=output

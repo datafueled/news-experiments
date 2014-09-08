@@ -1,0 +1,147 @@
+{% extends "src/base.html" %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 well well-sm">
+      This material is derived from an article posted on the
+      <a href="http://www.aljazeera.com/news/middleeast/2014/09/us-launches-strikes-around-iraq-haditha-dam-20149765826257528.html">Al Jazeera</a> website.
+      Copyright of the text and images are as indicated on their site.
+    </div>
+  </div>
+</div>
+<div id="viewport" class="container">
+  <div class="row">
+    <article class="col-sm-6">
+      <div>
+        <span class="label label-default">Middle East</span>
+      </div>
+
+      <div class="page-header">
+        <h1>US launches strikes around Iraq's Haditha Dam</h1>
+      </div>
+
+      <p class="lead">Fighter jets carry out air strikes near strategic
+      dam which was under threat from Islamic State group, US official
+      says.</p>
+
+      <p class="small">Last updated: 07 Sep 2014 12:45</p>
+
+      <img src="static/20149712331636734_20.jpg" class="img-responsive img-rounded">
+      <p class="caption">The US is trying to beat back Islamic State
+      fighters who have been trying to take over key dams across Iraq [AP]</p>
+
+      <p>The United States has begun carrying out air strikes near Iraq's
+      <span class="aside" data-toggle="tooltip"
+      title="The Haditha Dam is an earth-fill dam on
+      the Euphrates, north of Haditha (Iraq), creating Lake Qadisiyah.
+      The dam is just over 9 kilometres (5.6 mi) long and 57 metres
+      (187 ft) high. The purpose of the dam is to generate hydroelectricity,
+      regulate the flow of the Euphrates and provide water for irrigation.
+      It is the second-largest hydroelectric contributor to the power system
+      in Iraq behind the Mosul Dam.">Haditha Dam</span> which was under
+      threat from Islamic State (IS) fighters, a US defence official has
+      said.</p>
+
+      <p>It is the first time that the US is targeting IS fighters in the
+      area as the group tries to capture the vital dam.</p>
+
+      <img src="static/201133112945678371_20.jpg"
+      class="pull-left image-floated-left img-rounded">
+
+      <p>"At the request of the Iraqi government and in keeping with our
+      mission to protect US personnel and facilities, US military planes
+      have begun striking ISIL terrorists near the Haditha Dam," said the
+      official who declined to be identified.</p>
+
+      <p>"These strikes are being conducted to prevent the terrorists from
+      further threatening Iraqi security forces in control of the dam."</p>
+
+      <p>Iraqi army helicopters were also taking part in the offensive,
+      targeting the positions of IS fighters around the city of Haditha,
+      the Iraqi defence ministry confirmed."These strikes are being
+      conducted to prevent the terrorists from further threatening Iraqi
+      security forces in control of the dam."</p>
+
+      <p>US officials said that while the Anbar Province dam remains in
+      control of the Iraqis, the US offensive is an effort to beat back
+      fighters who have been trying to take over key dams across the
+      country.</p>
+
+      <p>Last month, IS fighters tried to capture the Haditha Dam, which
+      has six power generators located alongside the country's second-largest
+      reservoir. Iraqi forces backed up by local Sunni tribes were able to
+      hold them off.</p>
+
+      <p>The IS group was able to take control of the Mosul Dam in northern
+      Iraq last month, but persistent US air strikes helped Kurdish and
+      Iraqi forces retake the dam.</p>
+
+      <p>A top security spokesman told Al Jazeera that the Iraqi government
+      expected the US to also conduct air strikes on areas on the outskirts
+      of the capital, known as the Baghdad belt – an area particularly
+      important to Iraq's security.</p>
+
+      <p>"If we want a remedy for this cancer of course there must be
+      help from the global system and if there is real help from the
+      American side we will tackle it in a shorter time - especially
+      when we are talking about air power. If the Americans will be
+      with us in this offensive everything will be ok," the interior
+      ministry spokesman told Al Jazeera.</p>
+
+      <p>In a separate development, Kurdish Peshmerga fighters have
+      taken Gazzer mountain, a strategic location close to Kalak on
+      the road to Mosul, sources told Al Jazeera.</p>
+
+      <p>The Peshmerga offensive was supported by air strikes from the
+      Iraqi air force.</p>
+    </article>
+    <div class="col-sm-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">TOP NEWS</div>
+        <ul class="list-group">
+          <li class="list-group-item">US launches strikes around Iraq's Haditha Dam</li>
+          <li class="list-group-item">Abbas warns he may end unity deal with Hamas</li>
+          <li class="list-group-item">Ukraine truce deal shaken by shelling</li>
+          <li class="list-group-item">Yemen's Houthi rebels escalate Sanaa standoff</li>
+          <li class="list-group-item">Death penalty for Afghans in gang-rape attack</li>
+        </ul>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">MIDDLE EAST</div>
+        <ul class="list-group">
+          <li class="list-group-item">Escaping an Islamic State execution in Iraq</li>
+          <li class="list-group-item">Syria's 'lost generation' in Lebanon</li>
+          <li class="list-group-item">Who are Israel's Palestinian informants?</li>
+          <li class="list-group-item">UAE jumps back into pearl diving</li>
+          <li class="list-group-item">Women urged to fight breast cancer stigma</li>
+        </ul>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">WHAT'S HOT</div>
+        <ul class="list-group">
+          <li class="list-group-item">Abbas warns he may end unity deal with Hamas</li>
+          <li class="list-group-item">US launches strikes around Iraq's Haditha Dam</li>
+          <li class="list-group-item">Escaping an Islamic State execution in Iraq</li>
+          <li class="list-group-item">Denmark introduces rehab for Syrian fighters</li>
+          <li class="list-group-item">Who are Israel's Palestinian informants?</li>
+          <li class="list-group-item">Scottish poll shows majority back breakaway</li>
+          <li class="list-group-item">Death penalty for Afghans in gang-rape attack</li>
+          <li class="list-group-item">North Korea sets trial date for US citizen</li>
+          <li class="list-group-item">Saudi unveils 900km fence on Iraq border</li>
+          <li class="list-group-item">IS group 'kills second Lebanese captive'</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extrascript %}
+  $(document).ready(function () {
+    $('.aside').tooltip({
+      'html': true,
+      'placement': 'auto top',
+    });
+  });
+{% endblock %}
