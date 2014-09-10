@@ -1,4 +1,5 @@
 FILES=index.html \
+      annotations.html \
       annotations-none.html \
       annotations-margin-notes.html \
       annotations-popover.html \

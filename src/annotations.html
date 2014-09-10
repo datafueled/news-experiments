@@ -1,0 +1,152 @@
+{% extends "src/base.html" %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="page-header">
+        <h1>Annotations</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="page-header">
+        <h1>Goals</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>When we look at a news article, we are often left with many
+      questions, especially when it is a subject that we might not have
+      been following closely in the past.</p>
+
+      <p>It is not reasonable to assume that every article should be
+      written to the lowest common denominator. This would lead to
+      something tedious to read once you were familiar with the subject
+      matter. One possible approach to solving this is to provide
+      annotations as a way to indicate that additional information
+      is available.</p>
+
+      <p>Ideally, annotations would:</p>
+
+      <ul>
+        <li>Not be overly intrusive or distracting.</li>
+        <li>Make additional information optionally available to the
+        reader when it is useful, without blocking the overall flow
+        of the article.</li>
+        <li>Be available and usable on all platforms.</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <p>Looking at the <a href="annotations-none.html">sample article</a>
+      that we are using for looking at the use and presentation of
+      annotations, we can identify a number of open questions.</p>
+
+      <ul>
+        <li>Why is Haditha Dam of strategic importance?</li>
+        <li>What other dams or targets are the Islamic State group going
+        after?</li>
+        <li>How can we read more about what happened at the Mosul dam?</li>
+        <li>Who are the Peshmerga and what do they have to do with this
+        story?</li>
+        <li>Is this operation by the United States part of the assistance
+        in the &quot;Baghdad Belt&quot; that is mentioned?</li>
+        <li>Who is ISIL?</li>
+      </ul>
+
+      <p>Some of these questions are clear to anyone who has been following
+      the story, while others may not be. The importance of the dam is
+      indirectly stated later in the article after it has been asserted to
+      be of strategic or vital importance a couple of times.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="page-header">
+        <h1>Approaches</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="annotations-tooltip.html"><img src="static/annotations-tooltip.png" alt=""></a>
+        <div class="caption">
+          <h3>Tooltips</h3>
+          <p>Tooltips appear when mousing over an annotation link.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="annotations-popover.html"><img src="static/annotations-popover.png" alt="..."></a>
+        <div class="caption">
+          <h3>Popovers</h3>
+          <p>Popovers require that you click on the annotation link and
+          then they appear to one side of the link.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="annotations-margin-notes.html"><img src="static/annotations-margin-notes.png" alt="..."></a>
+        <div class="caption">
+          <h3>Margin Notes</h3>
+          <p><b>This is not yet complete.</b> Margin notes show up in the
+          right margin of the article and do not obscure the text of
+          the article.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="page-header">
+        <h1>Conclusions</h1>
+      </div>
+      <p>While not yet complete with these experimental renderings,
+      we are not happy with any of the approaches taken so far.</p>
+
+      <p>Tooltips can not be interacted with. This limits their usefulness
+      as you can't dig deeper and explore multiple levels of annotations.
+      That said, tooltips did work well within the mobile browser
+      environment.</p>
+
+      <p>Popovers are interesting, but they also do not lend
+      themselves to multiple levels of annotations. They also do not
+      work well in the mobile browser environment where the screen
+      may be fairly small.</p>
+
+      <p>Margin notes could work nicely within the desktop browser
+      environment. However, they do not work well in a space-constrained
+      mobile environment. They also require that the margin be left
+      clear so that the margin notes have somewhere to live. Many
+      news websites, for better or worse, prefer to put a lot of
+      additional material in the margins to draw readers to other
+      reporting.</p>
+
+      <p>Additionally, we felt that there were some other issues with
+      the approach of using annotations as a whole.</p>
+
+      <ul>
+        <li>The amount of text that can be given for each item
+        is very limited. It must be tightly edited and restricted
+        to only the most salient facts.</li>
+        <li>Annotations do not handle the idea of nested or layered
+        annotations very well. They are not a good entry point
+        to a non-linear narrative. They are only well suited
+        for very brief explanations of a term or phrase.</li>
+      </ul>
+
+      <p>We feel that some aspects of this problem may be altered
+      by using &quot;storylines&quot; and will pursue that avenue
+      of investigation next.</p>
+
+      <p>We will also continue to think about this problem and
+      consider alternative approaches.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
