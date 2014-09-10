@@ -19,3 +19,7 @@ img.image-floated-left {
 .aside:hover {
   text-decoration: none;
 }
+
+.annotations .caption {
+  border-top: 1px #ccc solid;
+}
